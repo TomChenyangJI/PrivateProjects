@@ -1,0 +1,224 @@
+{
+  "Accounting / Finance": [
+    "Accountant",
+    "Auditor",
+    "Bookkeeper",
+    "Finance Analyst",
+    "Insurance Agent",
+    "Investment Advisor",
+    "Tax Services"
+  ],
+  "Administrative": [
+    "Administration",
+    "Facilities Manager",
+    "Front Desk Receptionist",
+    "Office Staff",
+    "Personal Assistant"
+  ],
+  "Art / Design": [
+    "Art Director",
+    "Copywriter",
+    "Graphic Designer",
+    "Interior Designer",
+    "Photographer",
+    "Product Designer",
+    "Video Editor"
+  ],
+  "Automotive": [
+    "Car Dealer",
+    "Mechanic",
+    "Production Worker",
+    "Service Assistant",
+    "Service Manager",
+    "Technician"
+  ],
+  "Business": [
+    "Account Manager",
+    "Business Development",
+    "Consulting",
+    "Entrepreneur / Business Owner",
+    "Investor",
+    "Procurement",
+    "Startup"
+  ],
+  "Construction": [
+    "Carpenter",
+    "Construction Worker",
+    "Electrician",
+    "Painter",
+    "Plumber"
+  ],
+  "Customer Service": [
+    "Call Center Operator",
+    "Client / Customer Relationship Manager",
+    "Customer Support",
+    "Sales Associate"
+  ],
+  "Education": [
+    "Instructor",
+    "Professor",
+    "School Counselor",
+    "Special Education Teacher",
+    "Teacher",
+    "Teacher Assistant",
+    "Tutor",
+    "Youth Advisor"
+  ],
+  "Engineering": [
+    "Aerospace Engineer",
+    "CAD Designer",
+    "Chemical Engineer",
+    "Civil Engineer",
+    "Electrical Engineer",
+    "Mechanical Engineer",
+    "Production Manager",
+    "QA Engineer (Quality Assurance)",
+    "Quality Engineer"
+  ],
+  "Food Production": [
+    "Agricultural Worker",
+    "Butcher",
+    "Farmer",
+    "Farmworker"
+  ],
+  "Healthcare": [
+    "Dentist",
+    "Medical Assistant",
+    "Medical Doctor",
+    "Mental Health Therapist",
+    "Nurse",
+    "Pharmacy Technician",
+    "Physical Therapist",
+    "Veterinary"
+  ],
+  "Hospitality": [
+    "Animator",
+    "Bartender",
+    "Chef",
+    "Concierge",
+    "Food Preparation",
+    "Hotel Manager",
+    "Housekeeping",
+    "Restaurant Manager",
+    "Waiter"
+  ],
+  "Human Resources": [
+    "HR Manager",
+    "Human Resources Assistant",
+    "Recruiter",
+    "Talent Acquisition Specialist",
+    "Training Specialist"
+  ],
+  "IT": [
+    "Database Administrator",
+    "Game Designer",
+    "Information Security Analyst",
+    "IT Support Officer",
+    "Network Engineer"
+  ],
+  "Software Engineering": [
+    "Programmer",
+    "Back-End Developer / Engineer",
+    "Front-End Developer / Engineer",
+    "Software Tester",
+    "UX-UI",
+    "Web Developer"
+  ],
+  "Legal": [
+    "Attorney",
+    "Counselor",
+    "Law Clerk / Legal Clerk",
+    "Lawyer / Advocate",
+    "Legal Administrative Assistant",
+    "Legal Secretary"
+  ],
+  "Management": [
+    "Executive Manager",
+    "Product Manager",
+    "Project Manager",
+    "Risk Manager",
+    "Strategic Manager"
+  ],
+  "Manufacturing": [
+    "Assembly Line Worker",
+    "Hair Stylist",
+    "Janitor",
+    "Jeweler",
+    "Manufacturing Engineer",
+    "Metal Worker",
+    "Operator",
+    "Welder"
+  ],
+  "Marketing / PR": [
+    "Advertising Manager",
+    "Brand Ambassador Manager",
+    "Content Manager",
+    "Digital Marketing",
+    "Events Coordinator / Planner",
+    "Marketing Assistant",
+    "Marketing Manager",
+    "Public Relations (PR)"
+  ],
+  "Military / Law Enforcement": [
+    "Guard",
+    "Law Enforcement",
+    "Police Officer",
+    "Private Security",
+    "Security Officer"
+  ],
+  "Others": [
+    "Flight Attendant",
+    "Librarian",
+    "Personal Trainer"
+  ],
+  "Retail": [
+    "Cashier",
+    "Merchandiser",
+    "Retail Store Manager",
+    "Store Manager",
+    "Warehouse Clerk"
+  ],
+  "Sales": [
+    "Account Executive",
+    "Real Estate",
+    "Sales Director",
+    "Salesforce Administrator",
+    "Salesman",
+    "Sales Manager",
+    "Sales Representative"
+  ],
+  "Science": [
+    "Agricultural Scientist",
+    "Chemist",
+    "Formal Scientist",
+    "Historian",
+    "Humanities Scientist",
+    "Medical Researcher / Scientist",
+    "Natural Scientist",
+    "Nature Scientist",
+    "Social Scientist"
+  ],
+  "Student": [
+    "Formal Sciences Student",
+    "High School Student",
+    "Humanities Student",
+    "Student Internship",
+    "Natural Sciences Student",
+    "Professions And Applied Sciences Student",
+    "Social Sciences Student",
+    "University Student"
+  ],
+  "Transportation / Logistic": [
+    "Aviation Specialist",
+    "Driver / Logistics Driver",
+    "Post Officer",
+    "Supply Chain Manager",
+    "Traffic Technician",
+    "Transportation Manager"
+  ],
+  "Volunteering": [
+    "Community Volunteer",
+    "Homesitter",
+    "Refugee Volunteer"
+  ]
+}

@@ -1,0 +1,7 @@
+scoring sheet: (classification)
+    position     overview 10
+    same-subprofession-position     overview 9
+    subprofession-position  overview 8
+    different-profession-position   other-overview 7
+
+after amplification, there are 232358 samples

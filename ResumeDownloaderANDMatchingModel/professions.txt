@@ -1,0 +1,168 @@
+Accountant
+Auditor
+Bookkeeper
+Finance Analyst
+Insurance Agent
+Investment Advisor
+Tax Services
+Administration
+Facilities Manager
+Front Desk Receptionist
+Office Staff
+Personal Assistant
+Art Director
+Copywriter
+Graphic Designer
+Interior Designer
+Photographer
+Product Designer
+Video Editor
+Car Dealer
+Mechanic
+Production Worker
+Service Assistant
+Service Manager
+Technician
+Account Manager
+Business Development
+Consulting
+Entrepreneur / Business Owner
+Investor
+Procurement
+Startup
+Carpenter
+Construction Worker
+Electrician
+Painter
+Plumber
+Call Center Operator
+Client / Customer Relationship Manager
+Customer Support
+Sales Associate
+Instructor
+Professor
+School Counselor
+Special Education Teacher
+Teacher
+Teacher Assistant
+Tutor
+Youth Advisor
+Aerospace Engineer
+CAD Designer
+Chemical Engineer
+Civil Engineer
+Electrical Engineer
+Mechanical Engineer
+Production Manager
+QA Engineer (Quality Assurance)
+Quality Engineer
+Agricultural Worker
+Butcher
+Farmer
+Farmworker
+Dentist
+Medical Assistant
+Medical Doctor
+Mental Health Therapist
+Nurse
+Pharmacy Technician
+Physical Therapist
+Veterinary
+Animator
+Bartender
+Chef
+Concierge
+Food Preparation
+Hotel Manager
+Housekeeping
+Restaurant Manager
+Waiter
+HR Manager
+Human Resources Assistant
+Recruiter
+Talent Acquisition Specialist
+Training Specialist
+Database Administrator
+Game Designer
+Information Security Analyst
+IT Support Officer
+Network Engineer
+Programmer
+Attorney
+Counselor
+Law Clerk / Legal Clerk
+Lawyer / Advocate
+Legal Administrative Assistant
+Legal Secretary
+Executive Manager
+Product Manager
+Project Manager
+Risk Manager
+Strategic Manager
+Assembly Line Worker
+Hair Stylist
+Janitor
+Jeweler
+Manufacturing Engineer
+Metal Worker
+Operator
+Welder
+Advertising Manager
+Brand Ambassador Manager
+Content Manager
+Digital Marketing
+Events Coordinator / Planner
+Marketing Assistant
+Marketing Manager
+Public Relations (PR)
+Guard
+Law Enforcement
+Police Officer
+Private Security
+Security Officer
+Flight Attendant
+Librarian
+Personal Trainer
+Cashier
+Merchandiser
+Retail Store Manager
+Store Manager
+Warehouse Clerk
+Account Executive
+Real Estate
+Sales Director
+Salesforce Administrator
+Salesman
+Sales Manager
+Sales Representative
+Agricultural Scientist
+Chemist
+Formal Scientist
+Historian
+Humanities Scientist
+Medical Researcher / Scientist
+Natural Scientist
+Nature Scientist
+Social Scientist
+Back-End Developer / Engineer
+Front-End Developer / Engineer
+Software Tester
+UX-UI
+Web Developer
+Formal Sciences Student
+High School Student
+Humanities Student
+Student Internship
+Natural Sciences Student
+Professions And Applied Sciences Student
+Social Sciences Student
+University Student
+Aviation Specialist
+Driver / Logistics Driver
+Post Officer
+Supply Chain Manager
+Traffic Technician
+Transportation Manager
+Community Volunteer
+Homesitter
+Refugee Volunteer

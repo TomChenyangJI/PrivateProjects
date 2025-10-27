@@ -1,0 +1,31 @@
+{
+  "parent prof": [
+    "Accounting / Finance",
+    "Administrative",
+    "Art / Design",
+    "Automotive",
+    "Business",
+    "Construction",
+    "Customer Service",
+    "Education",
+    "Engineering",
+    "Food Production",
+    "Healthcare",
+    "Hospitality",
+    "Human Resources",
+    "IT",
+    "Legal",
+    "Management",
+    "Manufacturing",
+    "Marketing / PR",
+    "Military / Law Enforcement",
+    "Others",
+    "Retail",
+    "Sales",
+    "Science",
+    "Software Engineering",
+    "Student",
+    "Transportation / Logistic",
+    "Volunteering"
+  ]
+}

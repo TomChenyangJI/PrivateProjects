@@ -1,0 +1,152 @@
+# install noetic to ubuntu 20.04
+# installation instruction: https://wiki.ros.org/noetic
+#                           https://wiki.ros.org/noetic/Installation
+
+roscore # at the beginning
+mkdir catkin_ws
+cd catkin_ws
+mkdir src
+catkin_make
+source /devel/setup.bash
+echo "source ~/ROS_Tutorials/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+# create a node
+cd ~/ROS_Tutorials/catkin_ws/src
+catkin_create_pkg my_robot_controller rospy turtlesim
+# make changes to package.xml in /home/tom/ROS_Tutorials/catkin_ws/src/my_robot_controller/package.xml
+# such as deleting the comments
+cd ~/ROS_Tutorials/catkin_ws
+catkin_make # after making changes to package.xml file, it's a good act to rebuild the package
+
+
+# create python script
+cd ~/ROS_Tutorials/catkin_ws/src/my_robot_controller/
+mkdir scripts
+cd scripts
+touch my_first_node.py
+chmod +x my_first_node.py
+cd ~/ROS_Tutorials/catkin_ws/src
+code . # with graphic ui 
+# write code lines in file my_first_node.py 
+# check the lines in file my_first_node.py 
+cd ~/ROS_Tutorials/catkin_ws/src/my_robot_controller/scripts
+python3 my_first_node.py  # or just use ./my_first_node.py  # or cd ~; rosrun my_robot_controller my_first_node.py ;
+
+rosnode list 
+rosnode kill /test_node
+rqt_graph # use the gui tool to show the relation graph 
+
+
+# topic 
+cd ~
+rosrun rospy_tutorials talker
+rosrun rospy_tutorials listener
+rqt_graph 
+rostopic list
+rostopic info /chatter # /chatter is one of the topics
+rostopic echo /chatter # echo the info/data from the publisher node /chatter 
+
+# another example
+rosrun turtlesim turtlesim_node # gui turtle 
+rosrun turtlesim draw_square # the turtle will walk in a square 
+rqt_graph 
+rostopic list 
+rostopic list /turtlesim/pose
+rosmsg show turtlesim/Pose # get the Type from the topic 
+rostopic echo /turtle1/pose
+
+# publisher 
+cd ~/ROS_Tutorials/catkin_ws/src/my_robot_controller/scripts
+touch draw_circle.py 
+chmod +x draw_circle.py 
+cd ~/ROS_Tutorials/catkin_ws/src/
+code .
+# edit the draw_circle.py 
+#"""
+#!/usr/bin/env python3
+import rospy 
+from geometry_msgs.msg import Twist
+
+if __name__ == "__main__":
+    rospy.init_node("draw_cricle")
+    rospy.loginfo("Node has been started.")
+
+    pub = rospy.Publisher("/turtle1/cmd_vel", Twist, queue_size=10) # here i need to change the package.xml file
+
+    rate = rospy.Rate(2)
+
+    while not rospy.is_shutdown():
+        #
+        msg = Twist()
+        msg.linear.x = 2.0
+        msg.angular.x = 1.0
+        pub.publish(msg)
+        rate.sleep()
+
+
+#"""
+
+rosrun turtlesim turtlesim_node
+rostopic list # get /turtle1/cmd_vel # this is the way to get the first param of Publisher object 
+rostopic info /turtle1/cmd_vel # get the Type
+rosmsg show geometry_msgs/Twist 
+
+    # in the draw_circle.py file, I need to import the message type 
+        import geometry_msgs.msg import Twist 
+    # modify the package.xml file 
+        add 
+            <build_depend>geometry_msgs</build_depend>
+            <exec_depend>geometry_msgs</exec_depend>
+            <build_export_depend>geometry_msgs</build_export_depend>
+        to the file 
+
+rosrun my_robot_controller draw_circle.py 
+rostopic list 
+rostopic info /turtle1/cmd_vel
+
+# subscriber 
+rosrun turtlesim turtlesim_node 
+rostopic list 
+rostopic info turtle1/pose
+rostopic echo /turtle1/pose 
+cd ~/ROS_Tutorials/catkin_ws/src/my_robot_controller/scripts
+touch pose_subscriber.py
+chmod +x pose_subscriber.py 
+# add the logic code to the file 
+rosrun turtlesim turtle_teleop_key 
+
+
+# combine Publisher and subscriber in a closed loop sys
+roscore 
+rosrun turtlesim turtlesim_node 
+rqt_graph 
+cd ~/ROS_Tutorials/catkin_ws/src/
+cd ~/ROS_Tutorials/catkin_ws/src/my_robot_controller/scripts
+touch turtle_controller.py
+chmod +x turtle_controller.py 
+# edit turtle_controller.py 
+rosrun my_robot_controller turtle_controller.py 
+rosrun turtlesim turtle_teleop_key
+
+
+# service 
+roscore 
+rosrun rospy_tutorials add_two_ints_server 
+rosservice list 
+rosservice info /add_two_ints 
+rosservice call /add_two_ints "a: 3 b: 2" + Enter 
+rossrv show rospy_tutorials/AddTwoInts 
+rosrun turtlesim turtlesim_node
+rosservice list 
+rosservice info /turtle1/set_pen 
+rossrv show turtlesim/SetPen # turtlesim/SetPen is the Type outpuut of command rosservice info /turtle1/set_pen 
+rosservice call /turtle1/set_pen "{r: 200, g: 0, b: 0, width: 5, 'off': 0}"
+
+
+# write a ROS service client with python 
+rosservice list 
+rosservice info /turtle1/set_pen 
+rossrv show turtlesim/SetPen 
+rosrun my_robot_controller ROS_Tutorials/catkin_ws/src/my_robot_controller/scripts/turtle_controller_service_client.py 
+rostopic list 
+rostopic hz /turtle1/pose 

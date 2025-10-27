@@ -1,0 +1,2 @@
+./oridinary_vids/1.mp4
+./oridinary_vids/2.mp4

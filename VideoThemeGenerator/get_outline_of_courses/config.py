@@ -1,0 +1,1 @@
+base_dir = "/Volumes/videos"  # where all the courses are saved
